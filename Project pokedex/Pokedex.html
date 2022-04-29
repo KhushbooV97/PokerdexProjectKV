@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="Pokeman.css">
+
+	</head>
+	<body>
+        <div class="container">
+			<div class="topnav">
+				<a href="#home" class="active">Pokeman</a>
+				<div id="myLinks">
+					<a href="P1.html">list of Pokeman</a>
+					<a href="#about">About Pokeman</a>
+				</div>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#xe5d2; Hamburger</a>
+			</div>
+			<h1>POKEDEX</h1>
+		</div>
+		<footer> 
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="Search.." class="input" name="search">
+						<button type="submit">Search</button>
+					</form>
+				</div>
+		</footer>
+		<script>
+			function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+			x.style.display = "none";
+			} else {
+			x.style.display = "block";
+			}
+			}
+		</script>
+
+	</body>
+</html>
